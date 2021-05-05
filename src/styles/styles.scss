@@ -1,0 +1,53 @@
+@import "core/reset";
+@import "core/mixins";
+@import "core/colors";
+@import "core/buttons";
+@import "core/display";
+@import "core/grid";
+@import "core/text";
+
+
+// base
+body {
+  box-sizing: border-box;
+  color: $dark-grey;
+  font: normal 13px $sans;
+  margin: 0;
+}
+::selection {
+  background-color: lighten($pink, 5%);
+  color: $dark-grey;
+}
+::-moz-selection {
+  background-color: lighten($pink, 5%);
+  color: $dark-grey;
+}
+.width {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 85%;
+  @include responsiveMin(85em) {
+    width: 90%;
+  }
+}
+.content {
+  font-size: 1.25em;
+  margin: 3em auto;
+  overflow: visible;
+}
+.sep {
+  background-color: $pink;
+  height: 1px;
+  margin: 2.5em auto;
+  width: 75%;
+}
+
+@import "pages/parts/header";
+@import "pages/parts/footer";
+
+@import "pages/home";
+@import "pages/about";
+@import "pages/rates";
+@import "pages/contact";
+
+/* == Wit beyond measure is a man's greatest treasure. == */

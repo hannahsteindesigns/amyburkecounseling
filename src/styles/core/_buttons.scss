@@ -1,0 +1,20 @@
+// buttons
+button,
+.button {
+  background-color: $pink;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba($dark-grey, .5);
+  color: #FFF;
+  cursor: pointer;
+  letter-spacing: .5px;
+  padding: 1em 1.25em;
+  transition: all .5s;
+  @include linkStyles() {
+    background-color: darken($pink, 10%);
+    color: #FFF;
+    transition: all .5s;
+  }
+  &.full {
+    width: 100%;
+  }
+}

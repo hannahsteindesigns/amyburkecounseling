@@ -1,0 +1,51 @@
+@mixin flexbox($justify-content: space-between, $align-items: flex-start, $flow: row wrap) {
+  align-items: $align-items;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-flow: $flow;
+  justify-content: $justify-content;
+}
+
+@mixin textAlign($universal, $width) {
+  @if ($universal) {
+    .text-left { text-align: left; }
+    .text-right { text-align: right; }
+    .text-center { text-align: center; }
+  } @else {
+    .#{$width}-text-left { text-align: left; }
+    .#{$width}-text-right { text-align: right; }
+    .#{$width}-text-center { text-align: center; }
+  }
+
+}
+
+@mixin prefix($declarations, $prefixes: ()) {
+  @each $property, $value in $declarations {
+    @each $prefix in $prefixes {
+      #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+  }
+}
+
+@mixin linkStyles() {
+  &:hover,
+  &:focus,
+  &:active {
+    @content;
+  }
+}
+
+@mixin responsiveMin($minWidth) {
+  @media (min-width: $minWidth) {
+    @content;
+  }
+}
+
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}

@@ -1,0 +1,82 @@
+header,
+.header {
+  background: url(../images/dandelions.jpg) 25% center no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 55vh;
+  @include responsiveMin(550px) { height: 65vh; }
+  padding: 3em 0 4em;
+  position: relative;
+  &:before {
+    background-color: rgba(#000, .25);
+    content:"";
+    height: 100%;
+    display: block;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+  #banner {
+    height: 100%;
+    #logo {
+      width: 100%;
+      @include responsiveMin(550px) {
+        max-width: 550px;
+        width: 75%;
+      }
+    }
+  }
+}
+nav,
+.nav {
+  background-color: $pink;
+  margin: 0 auto;
+  padding: 1em 0;
+  width: 100%;
+  & a {
+    color: $dark-grey;
+    font-family: $serif;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    margin: 0 .75em;
+    padding: 0 5px;
+    text-transform: lowercase;
+    @include responsiveMin(575px) {
+      font-size: 1.5em;
+      margin: 0 1em;
+    }
+    @include responsiveMin(750px) { margin: 0 2em; }
+    @include linkStyles() {
+      border-color: $dark-grey;
+      text-decoration: none;
+    }
+    &.active { border-color: $dark-grey; }
+  }
+  & img {
+    padding: 0 10px;
+    position: relative;
+    top: 8px;
+  }
+  &.sticky {
+    animation: moveDown 0.5s ease-in-out;
+    left: 0;
+    padding-top: 0;
+    position: fixed;
+    top: 0;
+    a {
+      font-size: 1em;
+      margin: 0 .25em;
+      @include responsiveMin(400px) { 
+        font-size: 1.2em;
+        margin: 0 .5em; 
+      }
+    }
+  }
+}
+
+@keyframes moveDown {
+  from { transform: translateY(-5rem); }
+  to { transform: translateY(0rem); }
+}

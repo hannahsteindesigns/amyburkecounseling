@@ -1,0 +1,53 @@
+
+
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+.l-show {
+  display: none;
+  @include responsiveMin(60em) {
+    display: inline-block;
+  }
+}
+.margin {
+  &-top {
+    &-10 {
+      margin-top: 1em;
+    }
+    &-20 {
+      margin-top: 2em;
+    }
+  }
+  &-bottom {
+    &-05 { margin-bottom: 0.5em; }
+    &-10 { margin-bottom: 1em; }
+    &-20 { margin-bottom: 2em; }
+  }
+}
+.display {
+  &-block {
+    display: block;
+  }
+  &-hidden {
+    display: none;
+  }
+  &-inline-block {
+    display: inline-block;
+  }
+}
+.float {
+  &-left { float: left; }
+  &-right { float: right; }
+  &-none { float: none; }
+}
+.center {
+  &-x { margin: 0 auto; }
+  &-y {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
