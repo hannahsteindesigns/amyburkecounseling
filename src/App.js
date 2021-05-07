@@ -1,5 +1,6 @@
 import {
   BrowserRouter as Router,
+  HashRouter,
   Route,
   Switch } from 'react-router-dom';
 import useSticky from './hooks/useSticky';
@@ -74,7 +75,7 @@ const App = () => {
   const { isSticky, element } = useSticky();
   
   return (
-    <Router>
+    <HashRouter>
       <div>
         <Header />
         <Nav sticky={isSticky} />
@@ -88,7 +89,7 @@ const App = () => {
         <Footer />
         <GoogleAnalytics />
       </div>
-    </Router>
+    </HashRouter>
     )
 }
 
