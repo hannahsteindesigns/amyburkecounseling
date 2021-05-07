@@ -1,0 +1,23 @@
+// colors
+$pink: #FACBCB;
+$light-pink: #FCDDDD;
+$dark-pink: #CC6666;
+$dark-grey: #333;
+$light-grey: #F9F9F9;
+
+.t-pink {
+  color: $pink;
+}
+.t-dark-pink {
+	color: $dark-pink;
+}
+.t-grey {
+  color: $dark-grey;
+}
+
+.bg-pink {
+  background-color: $pink;
+}
+.bg-grey {
+  background-color: $dark-grey;
+}

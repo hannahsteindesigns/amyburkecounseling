@@ -1,0 +1,63 @@
+#contact {
+  #info {
+    margin: 0 auto;
+    .contact-block {
+      margin-bottom: 1.5em;
+      @include flexbox($justify-content: flex-start);
+      > a {
+        display: inline-block;
+        flex: 0 1 80%
+      }
+      > div { flex: 0 1 65% }
+      > i,
+      > svg {
+        color: $dark-grey;
+        flex: 0 1 8%;
+        font-size: 1.5em;
+        margin-right: .5em;
+        padding-bottom: 10px;
+      }
+    }
+    #social-links {
+      font-size: 2.5em;
+      margin-bottom: 1em;
+      @include responsiveMin(700px) {
+        margin-bottom: 0;
+        text-align: left;
+      }
+      a {
+        margin: 0 .25em;
+        @include linkStyles() { border-color: transparent; }
+      }
+    }
+  }
+  #referral {
+    margin-bottom: 1em;
+    a {
+      color: $dark-grey;
+      font-size: .8em;
+      opacity: .35;
+      transition: all .3s;
+      @include linkStyles() {
+        border-color: $dark-grey;
+        opacity: .75;
+        transition: all .3s;
+      }
+    }
+  }
+}
+#map {
+  height: 400px;
+  padding: 1em 0;
+  width: 100%;
+  #infoContainer {
+    height: 40px;
+    line-height: 1.5;
+    margin-right: 13px;
+  }
+  .gm-ui-hover-effect {
+    box-shadow: none;
+    right: 0 !important;
+    top: 5px !important;
+  }
+}

@@ -1,0 +1,33 @@
+#home {
+  font-size: 1.5em;
+  line-height: 1.75em;
+  padding: 2.5em 0 3em;
+  @include responsiveMin(1000px) { padding: 4em 0 3em; }
+  .width {
+    width: 80%;
+    @include responsiveMin(85em) { width: 60%; }
+    #services {
+      @include flexbox($justify-content: space-around);
+      border-top: 1px solid $dark-grey;
+      margin-top: 2.5em;
+      padding-top: 3em;
+      transition: opacity .3s;
+      .service-icon {
+        flex: 0 1 50%;
+        padding-bottom: 2em;
+        &:hover,
+        &:focus,
+        &:active {
+          opacity: .8;
+          transition: opacity .3s;
+        }
+        @include responsiveMin(900px) { flex-basis: 20%; }
+        > div {
+          font-size: .85em;
+          line-height: 1.5em;
+          margin-top: .25em;
+        }
+      }
+    }
+  }
+}

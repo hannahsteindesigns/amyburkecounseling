@@ -1,0 +1,16 @@
+#about {
+  .width {
+    @include flexbox();
+    .img-container {
+      margin-bottom: 2em;
+      max-height: 350px;
+      overflow: hidden;
+      @include responsiveMin(750px) { max-height: none; }
+      .img-about {
+        border-radius: 5px;
+        max-width: 320px;
+        width: 100%;
+      }
+    }
+  }
+}

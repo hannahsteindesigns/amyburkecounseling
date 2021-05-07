@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5f47755a.chunk.css",
+    "main.js": "/static/js/main.512f0b95.chunk.js",
+    "main.js.map": "/static/js/main.512f0b95.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.82d7d396.js",
+    "runtime-main.js.map": "/static/js/runtime-main.82d7d396.js.map",
+    "static/js/2.b1d402ae.chunk.js": "/static/js/2.b1d402ae.chunk.js",
+    "static/js/2.b1d402ae.chunk.js.map": "/static/js/2.b1d402ae.chunk.js.map",
+    "static/js/3.3c51c6f8.chunk.js": "/static/js/3.3c51c6f8.chunk.js",
+    "static/js/3.3c51c6f8.chunk.js.map": "/static/js/3.3c51c6f8.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.5f47755a.chunk.css.map": "/static/css/main.5f47755a.chunk.css.map",
+    "static/js/2.b1d402ae.chunk.js.LICENSE.txt": "/static/js/2.b1d402ae.chunk.js.LICENSE.txt",
+    "static/media/amy.a3874821.jpg": "/static/media/amy.a3874821.jpg",
+    "static/media/styles.css": "/static/media/dandelions.c6e8f1aa.jpg",
+    "static/media/logo.989f6963.svg": "/static/media/logo.989f6963.svg",
+    "static/media/logomark_black.d550f920.svg": "/static/media/logomark_black.d550f920.svg",
+    "static/media/logomark_pink.b38529f7.svg": "/static/media/logomark_pink.b38529f7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.82d7d396.js",
+    "static/js/2.b1d402ae.chunk.js",
+    "static/css/main.5f47755a.chunk.css",
+    "static/js/main.512f0b95.chunk.js"
+  ]
+}
